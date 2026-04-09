@@ -1,0 +1,10 @@
+root@fly-pi-v2:~# fdisk -l /mnt/image/Fly_C8.img
+Disk /mnt/image/Fly_C8.img: 14.56 GiB, 15634268160 bytes, 30535680 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x79a13f35
+
+Device                 Boot Start      End  Sectors  Size Id Type
+/mnt/image/Fly_C8.img1       8192 30212095 30203904 14.4G 83 Linux
