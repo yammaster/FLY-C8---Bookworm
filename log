@@ -8,3 +8,11 @@ Disk identifier: 0x79a13f35
 
 Device                 Boot Start      End  Sectors  Size Id Type
 /mnt/image/Fly_C8.img1       8192 30212095 30203904 14.4G 83 Linux
+
+
+
+sudo umount /mnt/image_root 2>/dev/null
+
+
+sudo mount -o ro,loop,offset=4194304 \
+  /mnt/image/Fly_C8.img /mnt/image_root
