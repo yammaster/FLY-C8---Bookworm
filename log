@@ -14,5 +14,8 @@ Device                 Boot Start      End  Sectors  Size Id Type
 sudo umount /mnt/image_root 2>/dev/null
 
 
-sudo mount -o ro,loop,offset=4194304 \
-  /mnt/image/Fly_C8.img /mnt/image_root
+sudo mount -o ro,loop,offset=4194304 /mnt/image/Fly_C8.img /mnt/image_root
+
+
+root@fly-pi-v2:~# sudo mount -o ro,loop,offset=4194304 /mnt/image/Fly_C8.img /mnt/image_root
+mount: /mnt/image_root: overlapping loop device exists for /mnt/image/Fly_C8.img
