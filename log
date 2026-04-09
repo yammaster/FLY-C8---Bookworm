@@ -19,3 +19,12 @@ sudo mount -o ro,loop,offset=4194304 /mnt/image/Fly_C8.img /mnt/image_root
 
 root@fly-pi-v2:~# sudo mount -o ro,loop,offset=4194304 /mnt/image/Fly_C8.img /mnt/image_root
 mount: /mnt/image_root: overlapping loop device exists for /mnt/image/Fly_C8.img
+
+
+
+
+sudo apt update
+sudo apt install kpartx
+
+sudo kpartx -av /mnt/image/Fly_C8.img
+
