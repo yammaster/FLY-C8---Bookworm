@@ -4,3 +4,6 @@
 
  
  sudo ./upgrade_to_bookworm.sh
+
+
+https://github.com/TeamGloomy/Board-Bootloaders/blob/master/STM32F4/Fly-C8-Bootloader.bin
