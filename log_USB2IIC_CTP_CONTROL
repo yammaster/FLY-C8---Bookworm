@@ -1,0 +1,9 @@
+[  +0.001095] hid-multitouch 0003:1A86:E5E3.0003: input,hidraw0: USB HID v1.00 Device [wch.cn USB2IIC_CTP_CONTROL] on usb-1c1b400.usb-1/input0
+[ +23.318986] usb 6-1: USB disconnect, device number 6
+[  +5.165578] usb 6-1: new full-speed USB device number 8 using ohci-platform
+[  +0.227040] usb 6-1: New USB device found, idVendor=1a86, idProduct=e5e3, bcdDevice= 0.00
+[  +0.000015] usb 6-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[  +0.000008] usb 6-1: Product: USB2IIC_CTP_CONTROL
+[  +0.000006] usb 6-1: Manufacturer: wch.cn
+[  +0.015266] input: wch.cn USB2IIC_CTP_CONTROL as /devices/platform/soc/1c1b400.usb/usb6/6-1/6-1:1.0/0003:1A86:E5E3.0004/input/input4
+[  +0.000480] hid-multitouch 0003:1A86:E5E3.0004: input,hidraw0: USB HID v1.00 Device [wch.cn USB2IIC_CTP_CONTROL] on usb-1c1b400.usb-1/input0
