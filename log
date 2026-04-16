@@ -66,3 +66,12 @@ CONFIG_USB_SERIAL_NUMBER="12345"
 # end of USB ids
 
 
+
+fly@FLY-C8:~$ ~/klippy-env/bin/python ~/klipper/klippy/klippy.py ~/printer_data/config/printer.cfg
+INFO:root:Starting Klippy...
+WARNING:root:No log file specified! Severe timing issues may result!
+INFO:root:Start printer at Thu Apr 16 00:22:17 2026 (1776291737.5 740.5)
+INFO:root:mcu 'mcu': Starting CAN connect
+INFO:can.interfaces.socketcan.socketcan:Created a socket
+WARNING:root:mcu 'mcu': Unable to open CAN port: [Errno 19] No such device
+
