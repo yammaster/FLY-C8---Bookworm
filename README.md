@@ -7,3 +7,6 @@
 
 
 https://github.com/TeamGloomy/Board-Bootloaders/blob/master/STM32F4/Fly-C8-Bootloader.bin
+
+
+~/klippy-env/bin/python ~/klipper/klippy/klippy.py ~/printer_data/config/printer.cfg
