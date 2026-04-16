@@ -90,3 +90,19 @@ ExecStart=/sbin/ip link set can0 txqueuelen 128
 [Install]
 WantedBy=multi-user.target
 
+
+
+
+# /etc/systemd/system/can-qlen.service
+[Unit]
+Description=Set CAN txqueuelen after device ready
+After=sys-subsystem-net-devices-can0.device
+Requires=sys-subsystem-net-devices-can0.device
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/ip link set can0 txqueuelen 128
+
+[Install]
+WantedBy=sys-subsystem-net-devices-can0.device
+
