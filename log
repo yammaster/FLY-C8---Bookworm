@@ -75,3 +75,18 @@ INFO:root:mcu 'mcu': Starting CAN connect
 INFO:can.interfaces.socketcan.socketcan:Created a socket
 WARNING:root:mcu 'mcu': Unable to open CAN port: [Errno 19] No such device
 
+
+
+# /etc/systemd/system/can-qlen.service
+[Unit]
+Description=Set CAN txqueuelen
+After=systemd-networkd.service
+Requires=systemd-networkd.service
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/ip link set can0 txqueuelen 128
+
+[Install]
+WantedBy=multi-user.target
+
