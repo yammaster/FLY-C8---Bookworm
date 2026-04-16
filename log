@@ -106,3 +106,18 @@ ExecStart=/sbin/ip link set can0 txqueuelen 128
 [Install]
 WantedBy=sys-subsystem-net-devices-can0.device
 
+
+
+
+[Unit]
+Description=Set CAN txqueuelen reliably
+After=systemd-networkd.service
+Wants=systemd-networkd.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'while [ ! -e /sys/class/net/can0 ]; do sleep 0.2; done; ip link set can0 txqueuelen 128'
+
+[Install]
+WantedBy=multi-user.target
+
